@@ -63,14 +63,14 @@ public class Vehicle {
     }
 
     //Methods
-    @Override
     public String toString() {
-        return "Vehicle{" +
-                "color='" + color + '\'' +
-                ", owner='" + owner + '\'' +
-                ", manufacturer='" + manufacturer + '\'' +
-                ", model='" + model + '\'' +
-                ", licensePlate='" + licensePlate + '\'' +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("Manufacturer: " + this.manufacturer + "\n");
+        sb.append("Model: " + this.model + "\n");
+        sb.append("Color: " + this.color + "\n");
+        sb.append("License Plate: " + this.licensePlate + "\n");
+        sb.append("Owner: " + this.owner + "\n\n");
+
+        return sb.toString();
     }
 }
